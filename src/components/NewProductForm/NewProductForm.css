@@ -1,0 +1,83 @@
+.form-container {
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color:  #f9fafb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  h2{
+    color: #1a3470;
+  }
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 6px;
+}
+
+.product-form input,
+.product-form select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+
+
+.product-form button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color:  #1a3470;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.product-form button:hover {
+  background-color:  #315ab9;
+}
+
+.add-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.add-input{
+    width: 90%;
+}
+.add-button{
+    font-size: 39px;
+    color : #1a3470;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        color:  #315ab9;
+    }
+}
+
+.equivalent-models-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 10px;
+    list-style: none;
+}

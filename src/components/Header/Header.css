@@ -1,0 +1,75 @@
+.header {
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* LOGO DESKTOP */
+.logo {
+  height: 50px;
+  object-fit: contain;
+}
+
+/* NAV */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+.link {
+  color: #1a3470;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #1a3470;
+  transition: width 0.25s ease;
+}
+
+.link:hover::after,
+.link.active::after {
+  width: 100%;
+}
+
+/* ======================= */
+/* MOBILE + TABLET */
+/* ======================= */
+@media (max-width: 991px) {
+
+  .header {
+    height: 50px;
+    padding: 0 12px;
+  }
+
+  /* OPCIÓN A: achicar logo */
+  .logo {
+    height: 30px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .link {
+    font-size: 0.75rem;
+  }
+}

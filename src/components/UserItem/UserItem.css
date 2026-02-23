@@ -1,0 +1,62 @@
+.user-item {
+    background: #ffffff;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease;
+}
+
+.user-item:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #1f2937;
+    width: 150px;
+    text-transform: capitalize;
+}
+
+.user-role {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+
+
+
+
+/* Botón eliminar */
+.delete-btn {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    width: 200px;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+

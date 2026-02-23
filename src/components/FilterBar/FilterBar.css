@@ -1,0 +1,149 @@
+.filter-bar {
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap; /* clave */
+}
+
+/* GROUP LEFT */
+.filters-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* SELECT */
+select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 150px;
+}
+
+/* STATE FILTER */
+.state-filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* SEARCH */
+.InputContainer {
+  height: 40px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 170px;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: #1a3470;
+}
+/* From Uiverse.io by adamgiebl */ 
+.cyberpunk-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cyberpunk-checkbox:before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cyberpunk-checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cyberpunk-checkbox-label {
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+/* From Uiverse.io by Shaidend */ 
+.InputContainer {
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: #1a3470;
+}
+
+.labelforsearch {
+  cursor: text;
+  padding: 0px 12px;
+}
+
+
+
+@media (max-width: 991px) {
+
+  .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .InputContainer {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
