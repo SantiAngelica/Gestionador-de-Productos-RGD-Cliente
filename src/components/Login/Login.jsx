@@ -45,7 +45,7 @@ export default function Login() {
     return (
 
         <div className="login-card">
-            <h1>Stock Manager</h1>
+            <h1>Stock Manager - RGD</h1>
             <p className="subtitle">Iniciar sesión</p>
 
             <form onSubmit={handleSubmit}>

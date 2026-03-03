@@ -146,22 +146,21 @@ Cantidad: ${product.quantity}
                     />
                   }
                 </td>
-                <td data-label="Acciones" className="actions-cell">
-                  <div className="actions-container">
+                <td data-label="Borrar" className="actions-cell">
                     <span
                       className="delete-button hvr-rotate"
                       onClick={() => handleDelete(product.id)}
                     >
                       <FaTrashCan />
                     </span>
-
-                    <Link
+                </td>
+                <td data-label="Editar" className="actions-cell">
+                  <Link
                       to={`/home/${product.id}`}
                       className="edit-button"
                     >
                       Editar
                     </Link>
-                  </div>
                 </td>
               </tr>
             ))}

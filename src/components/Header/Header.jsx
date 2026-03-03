@@ -4,6 +4,7 @@ import logo from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom'
 import Logout from '../Logout/Logout'
 import { HasRole } from '../../Helpers/IsAuthenticated'
+import { IoMdPerson } from "react-icons/io";
 
 function Header() {
   return (
@@ -49,8 +50,12 @@ function Header() {
 
 
       </ul>
-
-      <Logout />
+      <div className='user-actions'>
+        <NavLink to="/profile">
+          <IoMdPerson className='profile-button' />
+        </NavLink>
+        <Logout />
+      </div>
 
     </div>
   )

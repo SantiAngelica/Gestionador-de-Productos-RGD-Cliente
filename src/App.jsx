@@ -9,6 +9,7 @@ import Protected from './components/Protected/Protected';
 import Layout from './components/Layout/Layout';
 import UsersList from './components/UsersList/UsersList';
 import NewUserForm from './components/NewUserForm/NewUserForm';
+import Profile from './components/Profile/Profile';
 
 
 
@@ -54,6 +55,13 @@ function App() {
             element={
               <Protected needingRole={"superAdmin"}>
                 <NewUserForm />
+              </Protected>
+            }
+          />
+          <Route path="/profile"
+            element={
+              <Protected>
+                <Profile />
               </Protected>
             }
           />

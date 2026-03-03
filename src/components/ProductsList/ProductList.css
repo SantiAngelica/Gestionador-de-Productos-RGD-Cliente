@@ -252,9 +252,9 @@ td:last-child {
   .tabla tbody tr:nth-child(even) {
     background: #dbeafe; /* azul muy suave pero visible */
   }  
-  .actions-cell {
-    justify-content: end !important;
-  }
+  .actions-cell{
+  width: 50%
+}
 
   .actions-container {
     display: flex;

@@ -1,4 +1,4 @@
-.form-container {
+.profile-container {
   max-width: 700px;
   padding: 30px;
   border-radius: 15px;
@@ -6,17 +6,17 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.form-container h2 {
+.profile-container h2 {
   color: #1a3470;
 }
 
-.product-form {
+.profile-form {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.product-form label {
+.profile-form label {
   display: flex;
   flex-direction: column;
   font-weight: 600;
@@ -24,38 +24,37 @@
   color: #1a3470;
 }
 
-.product-form input {
+.profile-form input {
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
   font-size: 14px;
   width: 100%;
 }
-
-.product-form input:focus {
+.change-button{
+    font-size: 0.8rem !important;
+    height: 39px;
+    text-align: center;
+    padding: 0 10px;
+}
+.profile-form input:focus {
   outline: none;
   border-color: #1a3470;
 }
 
-.product-form input:disabled {
+.profile-form input:disabled {
   background-color: #e5e7eb;
   cursor: not-allowed;
 }
 
-.submit-button{
-  margin-top: 10px;
-  padding: 10px;
-  border: none;
-  border-radius: 6px;
-  background-color: #1a3470;
-  color: #fff;
-  font-size: 15px;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
 
-.product-form button:hover {
+.change-button:hover {
   background-color: #315ab9;
+  color: white;
+  border: 2px solid #315ab9;
+}
+.save-button{
+    background-color: #315ab9;
 }
 
 .error {

@@ -98,7 +98,7 @@ function NewUserForm() {
                 </label>
                 {error && <div className="error">{error}</div>}
 
-                <button type="submit">
+                <button type="submit" className="submit-button">
                     Crear Usuario
                 </button>
 
